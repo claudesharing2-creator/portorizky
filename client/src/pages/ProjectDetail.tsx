@@ -7,7 +7,7 @@ import { Link, useRoute } from "wouter";
 import { profile, projects } from "@/data/portfolio";
 import { useEffect } from "react";
 
-const markImage = "/manus-storage/rizky-industrial-mark_e93e0bfa.png";
+const markImage = `${import.meta.env.BASE_URL}assets/mark.svg`;
 
 export default function ProjectDetail() {
   const [, params] = useRoute("/projects/:slug");

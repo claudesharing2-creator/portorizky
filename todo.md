@@ -8,3 +8,6 @@
 - [x] Periksa status Git lokal dan kondisi repositori GitHub tujuan.
 - [x] Siapkan commit sumber portofolio untuk repositori GitHub.
 - [x] Dorong commit final ke claudesharing2-creator/portorizky dan verifikasi branch tujuan.
+- [x] Periksa sumber publikasi GitHub Pages saat ini dan pengaturan deployment yang tersedia.
+- [x] Tambahkan workflow GitHub Actions yang membangun Vite dan mengunggah `dist/public` sebagai artefak Pages.
+- [ ] Dorong konfigurasi workflow ke repositori dan jelaskan aktivasi sumber GitHub Actions di GitHub Pages.

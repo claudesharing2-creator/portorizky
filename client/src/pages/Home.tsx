@@ -18,10 +18,7 @@ import {
 } from "@/data/portfolio";
 import { useState } from "react";
 
-const heroImage = "/manus-storage/rizky-industrial-hero_2339e009.jpg";
-const experienceImage = "/manus-storage/rizky-industrial-experience_4734c9c0.jpg";
-const contactImage = "/manus-storage/rizky-industrial-contact_fe52b1b1.jpg";
-const markImage = "/manus-storage/rizky-industrial-mark_e93e0bfa.png";
+const markImage = `${import.meta.env.BASE_URL}assets/mark.svg`;
 
 function scrollToId(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -75,7 +72,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-visual reveal" aria-label="Grafik abstrak sistem lingkungan industri">
-            <img src={heroImage} alt="Kolase baja hitam, penanda registrasi, dan kertas teknis." />
+            <div className="visual-plate plate-hero" aria-hidden="true" />
             <div className="hero-map" aria-hidden="true">
               <svg viewBox="0 0 560 420" role="presentation">
                 <path d="M20 293 C112 188 195 356 274 244 S425 183 536 58" />
@@ -117,7 +114,7 @@ export default function Home() {
             <h2 id="work-title">KERJA ADALAH<br />REKAMAN<br />LAPANGAN.</h2>
           </div>
           <div className="work-visual">
-            <img src={experienceImage} alt="Technical paper, metal grid, and industrial calibration stripe." />
+            <div className="visual-plate plate-experience" aria-hidden="true" />
             <p>LOG // E-2025<br />SUMBER: CV TERVERIFIKASI</p>
           </div>
           <div className="experience-ledger">
@@ -221,7 +218,7 @@ export default function Home() {
             <a className="contact-email" href={`mailto:${profile.email}`}>{profile.email}<ArrowUpRight size={25} aria-hidden="true" /></a>
             <div className="contact-details"><span><Phone size={15} aria-hidden="true" /> {profile.phone}</span><span><MapPin size={15} aria-hidden="true" /> {profile.location}</span><a href={profile.linkedin} target="_blank" rel="noreferrer"><Mail size={15} aria-hidden="true" /> PROFIL LINKEDIN</a></div>
           </div>
-          <div className="contact-visual"><img src={contactImage} alt="Kenop kontrol industri di atas kertas teknis." /><p>TRANSMISI<br />SIAP</p></div>
+          <div className="contact-visual"><div className="visual-plate plate-contact" aria-hidden="true" /><p>TRANSMISI<br />SIAP</p></div>
         </section>
       </main>
 

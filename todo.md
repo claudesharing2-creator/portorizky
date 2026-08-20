@@ -12,3 +12,4 @@
 - [x] Tambahkan workflow GitHub Actions yang membangun Vite dan mengunggah `dist/public` sebagai artefak Pages.
 - [ ] Dorong konfigurasi workflow ke repositori dan jelaskan aktivasi sumber GitHub Actions di GitHub Pages.
 - [ ] Perbaiki urutan setup pnpm pada workflow, dorong pembaruan, dan verifikasi build GitHub Actions berhasil.
+- [ ] Hapus konflik versi pnpm pada workflow, dorong pembaruan, dan verifikasi workflow build kembali.

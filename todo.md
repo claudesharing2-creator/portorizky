@@ -5,3 +5,6 @@
 - [x] Ganti sistem merah penerbangan dengan palet bumi yang tetap kontras dan brutalistik.
 - [x] Sesuaikan motif serta perlakuan citra agar membangkitkan pemantauan lapangan, tanah, air, dan sistem industri lingkungan.
 - [x] Validasi tata letak desktop dan seluler, lalu jalankan pemeriksaan TypeScript serta build produksi.
+- [ ] Periksa status Git lokal dan kondisi repositori GitHub tujuan.
+- [ ] Siapkan commit sumber portofolio untuk repositori GitHub.
+- [ ] Dorong commit final ke claudesharing2-creator/portorizky dan verifikasi branch tujuan.

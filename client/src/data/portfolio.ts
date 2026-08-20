@@ -35,7 +35,7 @@ export const profile = {
     thesis: "Pemodelan dispersi SO₂, NO₂, dan CO dengan AERMOD pada cerobong insinerator RSUD Inche Abdoel Moeis, Samarinda.",
   },
   languages: ["Indonesia — Penutur asli", "Inggris — TOEFL 557"],
-  cvUrl: "/manus-storage/CV-Rizky-Bakti-Caturraga_f11cc721.pdf",
+  cvUrl: `${import.meta.env.BASE_URL}assets/cv-rizky-bakti-caturraga.pdf`,
 };
 
 export const navigation = [["Tentang", "#about"], ["Pekerjaan", "#work"], ["Keahlian", "#skills"], ["Arsip", "#archive"], ["Kontak", "#contact"]] as const;

@@ -13,3 +13,6 @@
 - [ ] Dorong konfigurasi workflow ke repositori dan jelaskan aktivasi sumber GitHub Actions di GitHub Pages.
 - [ ] Perbaiki urutan setup pnpm pada workflow, dorong pembaruan, dan verifikasi build GitHub Actions berhasil.
 - [ ] Hapus konflik versi pnpm pada workflow, dorong pembaruan, dan verifikasi workflow build kembali.
+- [ ] Periksa konfigurasi GitHub Pages, deployment aktif, dan artifact agar penyebab README masih tampil dapat dipastikan.
+- [ ] Terapkan koreksi repository-side bila diperlukan, lalu verifikasi URL publik menampilkan portofolio.
+- [ ] Hapus workflow Jekyll yang konflik agar deployment Vite menjadi satu-satunya artefak GitHub Pages.

@@ -1,312 +1,159 @@
 /**
- * PORTFOLIO CONTENT SOURCE
- * Update these structured records to change published information without editing UI components.
- * Facts are grounded in the supplied CV; do not add quantitative results unless documented.
+ * SUMBER KONTEN PORTOFOLIO
+ * Ubah rekaman terstruktur ini untuk mengubah informasi publik tanpa menyentuh komponen UI.
+ * Seluruh fakta bersumber dari CV yang diberikan; jangan menambah hasil kuantitatif yang tidak terdokumentasi.
  */
 
 export type Project = {
-  id: string;
-  slug: string;
-  index: string;
-  title: string;
-  category: string;
-  year: string;
-  role: string;
-  organization: string;
-  location: string;
-  shortDescription: string;
-  problem: string;
-  approach: string[];
-  result: string;
-  takeaway: string;
-  tools: string[];
-  tags: string[];
-  visual: "water" | "air" | "field" | "facility";
+  id: string; slug: string; index: string; title: string; category: string; year: string;
+  role: string; organization: string; location: string; shortDescription: string;
+  problem: string; approach: string[]; result: string; takeaway: string;
+  tools: string[]; tags: string[]; visual: "water" | "air" | "field" | "facility";
 };
 
 export type Experience = {
-  period: string;
-  role: string;
-  organization: string;
-  location: string;
-  status?: string;
-  summary: string;
-  responsibilities: string[];
+  period: string; role: string; organization: string; location: string; status?: string;
+  summary: string; responsibilities: string[];
 };
 
 export const profile = {
   name: "Rizky Bakti Caturraga",
   initials: "RBC",
   role: "Environmental Engineer · HSSE Specialist",
-  statement: "I engineer systems where environment, data & operations meet.",
-  summary:
-    "Environmental Engineer focused on compliance, water and wastewater monitoring, environmental data, air quality, and HSSE in oil and gas, shipping, and field settings.",
+  statement: "Saya membangun sistem di titik temu lingkungan, data, dan operasi.",
+  summary: "Insinyur Lingkungan dengan fokus pada kepatuhan, pemantauan air dan air limbah, data lingkungan, kualitas udara, serta HSSE dalam konteks migas, pelayaran, dan lapangan.",
   email: "rizkycaturraga@gmail.com",
   phone: "+62 822-4178-0966",
   linkedin: "https://linkedin.com/in/rizkycaturraga",
-  location: "Samarinda, East Kalimantan, Indonesia",
+  location: "Samarinda, Kalimantan Timur, Indonesia",
   education: {
-    degree: "B.Eng. Environmental Engineering",
+    degree: "S1 Teknik Lingkungan",
     institution: "Universitas Mulawarman",
     period: "2020—2024",
-    gpa: "3.90 / 4.00",
+    gpa: "3,90 / 4,00",
     distinction: "Cum laude",
-    thesis:
-      "AERMOD dispersion modelling of SO₂, NO₂, and CO from an incinerator stack at RSUD Inche Abdoel Moeis, Samarinda.",
+    thesis: "Pemodelan dispersi SO₂, NO₂, dan CO dengan AERMOD pada cerobong insinerator RSUD Inche Abdoel Moeis, Samarinda.",
   },
-  languages: ["Indonesian — Native", "English — TOEFL 557"],
+  languages: ["Indonesia — Penutur asli", "Inggris — TOEFL 557"],
   cvUrl: "/manus-storage/CV-Rizky-Bakti-Caturraga_f11cc721.pdf",
 };
 
-export const navigation = [
-  ["About", "#about"],
-  ["Work", "#work"],
-  ["Skills", "#skills"],
-  ["Archive", "#archive"],
-  ["Contact", "#contact"],
-] as const;
+export const navigation = [["Tentang", "#about"], ["Pekerjaan", "#work"], ["Keahlian", "#skills"], ["Arsip", "#archive"], ["Kontak", "#contact"]] as const;
 
 export const experience: Experience[] = [
   {
-    period: "MAY 2025—PRESENT",
-    role: "Environmental Data Engineer — Water & Wastewater",
-    organization: "PT Pertamina Hulu Mahakam",
-    location: "Balikpapan, East Kalimantan",
-    status: "ACTIVE RECORD",
-    summary:
-      "Supports the management, validation, and reporting of environmental data for water and wastewater monitoring in oil and gas operations.",
+    period: "MEI 2025—SEKARANG", role: "Environmental Data Engineer — Water & Wastewater", organization: "PT Pertamina Hulu Mahakam", location: "Balikpapan, Kalimantan Timur", status: "REKAMAN AKTIF",
+    summary: "Mendukung pengelolaan, validasi, dan pelaporan data lingkungan untuk pemantauan air serta air limbah di operasi minyak dan gas.",
     responsibilities: [
-      "Supports technical-approval (Pertek) updates, regulatory gap analysis, and compliance with wastewater quality standards.",
-      "Coordinates sampling schedules, validates external-laboratory Certificates of Analysis, and prepares periodic reports.",
-      "Updates EVEREST, SIMPEL, and EMF data; maintains Request Form Analysis, authorization, and analysis documentation.",
-      "Supports RKL-RPL review, PROPER and ESG Water documentation, and observes PROPER Compliance and ISO 14001 audit activity.",
+      "Mendukung penyusunan dan penyesuaian Persetujuan Teknis, analisis kesenjangan regulasi, serta kepatuhan terhadap baku mutu air limbah.",
+      "Mengoordinasikan jadwal sampling, memvalidasi Certificate of Analysis dari laboratorium eksternal, dan menyusun pelaporan berkala.",
+      "Memperbarui data EVEREST, SIMPEL, dan EMF; menjaga dokumen Request Form Analysis, otorisasi, dan Surat Analisa.",
+      "Mendukung telaah RKL-RPL, dokumen PROPER dan ESG Water, serta observasi audit PROPER Compliance dan ISO 14001.",
     ],
   },
   {
-    period: "FEB 2025—MAY 2025",
-    role: "Environmental HSE",
-    organization: "PT Pelayaran Duta Lintas Samudera",
-    location: "Samarinda, East Kalimantan",
-    summary:
-      "Managed environmental documentation, reporting, monitoring coordination, and facility-planning support for a shipping company.",
+    period: "FEB 2025—MEI 2025", role: "HSE Lingkungan", organization: "PT Pelayaran Duta Lintas Samudera", location: "Samarinda, Kalimantan Timur",
+    summary: "Menangani dokumen, pelaporan, koordinasi pemantauan, dan dukungan perencanaan fasilitas lingkungan untuk perusahaan pelayaran.",
     responsibilities: [
-      "Prepared and updated environmental documents and routine reporting for relevant authorities.",
-      "Contributed to planning for a hazardous-waste temporary storage facility and wastewater treatment installation.",
-      "Conducted periodic environmental sampling for water, air, and soil and coordinated laboratory analysis.",
-      "Coordinated annual environmental activity schedules across departments and operational compliance requirements.",
+      "Menyusun dan memperbarui dokumen lingkungan serta pelaporan rutin kepada instansi terkait.",
+      "Terlibat dalam perencanaan TPS Limbah B3 dan instalasi pengolahan air limbah.",
+      "Melaksanakan sampling berkala air, udara, serta tanah dan berkoordinasi dengan laboratorium.",
+      "Mengoordinasikan jadwal kegiatan lingkungan tahunan lintas departemen dan kepatuhan operasional.",
     ],
   },
   {
-    period: "2024",
-    role: "HSSE Internship — HSE/ENV",
-    organization: "PT Pertamina Hulu Mahakam",
-    location: "Balikpapan Base Office & SPS Site Senipah",
-    summary:
-      "Worked across office and field settings, supporting environmental documentation and a clean-water distribution troubleshooting effort.",
+    period: "2024", role: "Magang HSSE — HSE/ENV", organization: "PT Pertamina Hulu Mahakam", location: "Balikpapan Base Office & SPS Site Senipah",
+    summary: "Bekerja lintas kantor dan lapangan untuk mendukung dokumen lingkungan serta penelusuran gangguan distribusi air bersih.",
     responsibilities: [
-      "Supported environmental-document updates and existing-data inventory at the base office.",
-      "Assisted with updates to hazardous-waste temporary-storage technical detail documentation.",
-      "Surveyed clean-water distribution conditions, reconstructed P&ID pipe routing, and sampled water at distribution points.",
-      "Participated in routine safety talks and National K3 Month activity.",
+      "Mendukung pembaruan dokumen lingkungan dan inventarisasi data existing di base office.",
+      "Membantu pembaruan rincian teknis TPS Limbah B3 sesuai regulasi.",
+      "Mensurvei kondisi distribusi air bersih, merekonstruksi jalur P&ID, dan melakukan sampling pada titik distribusi.",
+      "Berpartisipasi dalam safety talk rutin dan kegiatan Bulan K3 Nasional.",
     ],
   },
   {
-    period: "JUN 2024—DEC 2024",
-    role: "Air-Emission Dispersion Modelling",
-    organization: "Kesling RSUD I. A. Moeis Samarinda",
-    location: "Samarinda, East Kalimantan",
-    summary:
-      "Modelled SO₂, NO₂, and CO dispersion from an incinerator stack and examined emission-control options.",
+    period: "JUN 2024—DES 2024", role: "Pemodelan Dispersi Emisi Udara", organization: "Kesling RSUD I. A. Moeis Samarinda", location: "Samarinda, Kalimantan Timur",
+    summary: "Memodelkan dispersi SO₂, NO₂, dan CO dari cerobong insinerator serta mengkaji opsi pengendalian emisi.",
     responsibilities: [
-      "Configured AERMOD using meteorological data, source settings, and receptor grids.",
-      "Conducted stack-emission and ambient-air sampling according to applicable SNI procedures.",
-      "Analysed wet-scrubber technology as an emission-control option and prepared a technical report with dispersion mapping.",
+      "Menyiapkan AERMOD dengan data meteorologi, konfigurasi sumber, dan grid reseptor.",
+      "Melakukan stack sampling emisi sumber dan sampling udara ambien sesuai SNI yang berlaku.",
+      "Mengkaji teknologi wet scrubber serta menyiapkan laporan teknis dengan peta sebaran dispersi.",
     ],
   },
   {
-    period: "2022—2023",
-    role: "K3 & Environmental Physics Laboratory Assistant Coordinator",
-    organization: "Environmental Technology Laboratory, Universitas Mulawarman",
-    location: "Samarinda, East Kalimantan",
-    summary:
-      "Coordinated laboratory-assistant activity, practical safety, field-sampling guidance, and assessment feedback.",
+    period: "2022—2023", role: "Koordinator Asisten Lab. K3 & Fisika Lingkungan", organization: "Laboratorium Teknologi Lingkungan, Universitas Mulawarman", location: "Samarinda, Kalimantan Timur",
+    summary: "Mengoordinasikan aktivitas asisten laboratorium, keselamatan praktikum, bimbingan sampling lapangan, dan umpan balik penilaian.",
     responsibilities: [
-      "Scheduled K3 practical sessions and maintained readiness of laboratory equipment.",
-      "Guided field sampling and the correct, safe use of environmental-physics equipment.",
-      "Reviewed practical reports and coordinated feedback with instructors.",
+      "Menyusun jadwal praktikum K3 dan menjaga kesiapan peralatan laboratorium.",
+      "Membimbing sampling lapangan dan penggunaan peralatan fisika lingkungan yang benar dan aman.",
+      "Menilai laporan praktikum dan berkoordinasi dengan dosen untuk perbaikan umpan balik.",
     ],
   },
 ];
 
 export const projects: Project[] = [
   {
-    id: "environmental-compliance-water-wastewater",
-    slug: "environmental-compliance-water-wastewater",
-    index: "PROJECT / 001",
-    title: "Environmental Compliance & Water / Wastewater Data",
-    category: "ENVIRONMENTAL DATA",
-    year: "2025—PRESENT",
-    role: "Environmental Data Engineer — Water & Wastewater",
-    organization: "PT Pertamina Hulu Mahakam",
-    location: "Balikpapan, East Kalimantan",
-    shortDescription:
-      "A source-grounded record of water and wastewater monitoring, data validation, and compliance-support activities in oil and gas operations.",
-    problem:
-      "Environmental monitoring data, technical-approval requirements, regulatory updates, and reporting cycles require disciplined coordination and validation.",
-    approach: [
-      "Coordinate sampling schedules with operational teams and sites.",
-      "Validate external-laboratory Certificates of Analysis and maintain analysis documentation.",
-      "Update EVEREST, SIMPEL, and EMF records; support periodic reporting and regulatory gap analysis.",
-      "Support PROPER, ESG Water, RKL-RPL, and audit-related environmental documentation.",
-    ],
-    result:
-      "The CV documents operational support and documentation work; no quantitative project outcome is published here.",
-    takeaway:
-      "Demonstrates environmental-compliance fluency at the intersection of monitoring workflows, regulatory systems, and data stewardship.",
-    tools: ["EVEREST", "SIMPEL", "EMF", "CoA Validation", "Environmental Reporting"],
-    tags: ["WATER", "WASTEWATER", "COMPLIANCE", "DATA"],
-    visual: "water",
+    id: "environmental-compliance-water-wastewater", slug: "environmental-compliance-water-wastewater", index: "PROYEK / 001", title: "Kepatuhan Lingkungan & Data Air / Air Limbah", category: "DATA LINGKUNGAN", year: "2025—SEKARANG", role: "Environmental Data Engineer — Water & Wastewater", organization: "PT Pertamina Hulu Mahakam", location: "Balikpapan, Kalimantan Timur", visual: "water",
+    shortDescription: "Rekaman berbasis CV mengenai pemantauan air dan air limbah, validasi data, serta dukungan kepatuhan di operasi migas.",
+    problem: "Data pemantauan, persyaratan Persetujuan Teknis, pembaruan regulasi, dan siklus pelaporan membutuhkan koordinasi serta validasi yang disiplin.",
+    approach: ["Mengoordinasikan jadwal sampling bersama tim dan site operasi.", "Memvalidasi Certificate of Analysis dari laboratorium eksternal serta menjaga dokumen analisa.", "Memperbarui rekaman EVEREST, SIMPEL, dan EMF; mendukung pelaporan serta analisis kesenjangan regulasi.", "Mendukung dokumen PROPER, ESG Water, RKL-RPL, dan kebutuhan audit lingkungan."],
+    result: "CV mendokumentasikan pekerjaan dukungan operasional dan dokumentasi; tidak ada hasil kuantitatif proyek yang dipublikasikan di sini.",
+    takeaway: "Menunjukkan pemahaman kepatuhan lingkungan pada pertemuan antara alur pemantauan, sistem regulasi, dan pengelolaan data.",
+    tools: ["EVEREST", "SIMPEL", "EMF", "Validasi CoA", "Pelaporan Lingkungan"], tags: ["AIR", "AIR LIMBAH", "KEPATUHAN", "DATA"],
   },
   {
-    id: "aermod-air-dispersion",
-    slug: "aermod-air-dispersion",
-    index: "PROJECT / 002",
-    title: "Air Emission Dispersion Modelling",
-    category: "AIR QUALITY",
-    year: "2024",
-    role: "Environmental Engineering Project",
-    organization: "Kesling RSUD I. A. Moeis Samarinda",
-    location: "Samarinda, East Kalimantan",
-    shortDescription:
-      "AERMOD modelling of SO₂, NO₂, and CO emissions from an incinerator stack, paired with sampling and wet-scrubber analysis.",
-    problem:
-      "The project investigated the dispersion of incinerator emissions and considered appropriate pollution-control technology.",
-    approach: [
-      "Set up AERMOD with source configuration, meteorological input, and receptor-grid parameters.",
-      "Performed source-emission stack sampling and ambient-air sampling in accordance with applicable SNI requirements.",
-      "Analysed wet-scrubber technology and assembled dispersion maps, impact analysis, and technical recommendations.",
-    ],
-    result:
-      "The documented output was a final technical report including dispersion maps, impact analysis, and pollution-control recommendations; no numerical result is published.",
-    takeaway:
-      "Demonstrates ability to connect atmospheric modelling, environmental sampling, compliance context, and engineering control selection.",
-    tools: ["AERMOD", "Stack Sampling", "Ambient-Air Sampling", "Meteorological Data", "Receptor Grid"],
-    tags: ["AERMOD", "AIR QUALITY", "DISPERSION", "MODELLING"],
-    visual: "air",
+    id: "aermod-air-dispersion", slug: "aermod-air-dispersion", index: "PROYEK / 002", title: "Pemodelan Dispersi Emisi Udara", category: "KUALITAS UDARA", year: "2024", role: "Proyek Teknik Lingkungan", organization: "Kesling RSUD I. A. Moeis Samarinda", location: "Samarinda, Kalimantan Timur", visual: "air",
+    shortDescription: "Pemodelan AERMOD untuk emisi SO₂, NO₂, dan CO dari cerobong insinerator, dipadukan dengan sampling dan kajian wet scrubber.",
+    problem: "Proyek ini menelaah sebaran emisi insinerator dan mempertimbangkan teknologi pengendalian pencemaran yang sesuai.",
+    approach: ["Menyiapkan AERMOD dengan konfigurasi sumber, data meteorologi, dan parameter grid reseptor.", "Melakukan stack sampling emisi sumber dan sampling udara ambien sesuai kebutuhan SNI.", "Mengkaji teknologi wet scrubber dan menyusun peta dispersi, analisis dampak, serta rekomendasi teknis."],
+    result: "Keluaran yang terdokumentasi adalah laporan teknis akhir berisi peta dispersi, analisis dampak, dan rekomendasi pengendalian; tidak ada angka hasil yang dipublikasikan.",
+    takeaway: "Menunjukkan kemampuan menghubungkan pemodelan atmosfer, sampling lingkungan, konteks kepatuhan, dan pemilihan pengendalian rekayasa.",
+    tools: ["AERMOD", "Stack Sampling", "Sampling Udara Ambien", "Data Meteorologi", "Grid Reseptor"], tags: ["AERMOD", "KUALITAS UDARA", "DISPERSI", "PEMODELAN"],
   },
   {
-    id: "clean-water-distribution",
-    slug: "clean-water-distribution",
-    index: "PROJECT / 003",
-    title: "Clean-Water Distribution Troubleshooting",
-    category: "FIELD ENGINEERING",
-    year: "2024",
-    role: "HSSE Intern — HSE/ENV",
-    organization: "PT Pertamina Hulu Mahakam, SPS Site Senipah",
-    location: "Senipah, East Kalimantan",
-    shortDescription:
-      "A field-based record of clean-water distribution surveying, P&ID reconstruction, water sampling, and quality analysis.",
-    problem:
-      "The operating site required investigation of its clean-water treatment and distribution system.",
-    approach: [
-      "Surveyed the existing field condition and mapped the distribution setting.",
-      "Reconstructed the clean-water pipe-route P&ID.",
-      "Collected clean-water samples at multiple distribution points and assessed quality and distribution patterns.",
-    ],
-    result:
-      "The CV records the field investigation and analysis activities; no quantified performance result is presented.",
-    takeaway:
-      "Demonstrates practical field-engineering capability across water infrastructure, drawings, sampling, and operational observation.",
-    tools: ["P&ID", "Water Sampling", "Distribution Analysis", "Field Survey"],
-    tags: ["WATER", "FIELD", "P&ID", "SAMPLING"],
-    visual: "field",
+    id: "clean-water-distribution", slug: "clean-water-distribution", index: "PROYEK / 003", title: "Penelusuran Distribusi Air Bersih", category: "REKAYASA LAPANGAN", year: "2024", role: "Magang HSSE — HSE/ENV", organization: "PT Pertamina Hulu Mahakam, SPS Site Senipah", location: "Senipah, Kalimantan Timur", visual: "field",
+    shortDescription: "Rekaman berbasis lapangan mengenai survei distribusi air bersih, rekonstruksi P&ID, sampling, dan analisis kualitas air.",
+    problem: "Site operasi membutuhkan investigasi terhadap sistem pengolahan serta distribusi air bersih yang berjalan.",
+    approach: ["Melakukan survei kondisi existing di lapangan dan pemetaan konteks distribusi.", "Merekonstruksi P&ID jalur perpipaan air bersih.", "Mengambil sampel air pada berbagai titik distribusi serta menganalisis kualitas dan pola distribusi."],
+    result: "CV mencatat aktivitas investigasi serta analisis lapangan; tidak ada hasil kinerja kuantitatif yang disajikan.",
+    takeaway: "Menunjukkan kemampuan rekayasa lapangan yang praktis pada infrastruktur air, gambar teknis, sampling, dan observasi operasi.",
+    tools: ["P&ID", "Sampling Air", "Analisis Distribusi", "Survei Lapangan"], tags: ["AIR", "LAPANGAN", "P&ID", "SAMPLING"],
   },
   {
-    id: "environmental-facility-engineering",
-    slug: "environmental-facility-engineering",
-    index: "PROJECT / 004",
-    title: "Environmental Facility Engineering",
-    category: "ENVIRONMENTAL FACILITY",
-    year: "2025",
-    role: "Environmental HSE",
-    organization: "PT Pelayaran Duta Lintas Samudera",
-    location: "Samarinda, East Kalimantan",
-    shortDescription:
-      "Planning support for a hazardous-waste temporary-storage facility and wastewater treatment installation alongside environmental documentation.",
-    problem:
-      "The company required environmentally compliant facilities and associated documentation to support its operations.",
-    approach: [
-      "Contributed to facility planning and environmental-document updates.",
-      "Supported planning for TPS Limbah B3 and an IPAL / wastewater treatment installation.",
-      "Coordinated recurring sampling and laboratory-analysis workflow for environmental parameters.",
-    ],
-    result:
-      "The CV establishes the planning and documentation scope; no delivered construction or numerical outcome is published.",
-    takeaway:
-      "Demonstrates applied environmental-facility and documentation experience within operational compliance work.",
-    tools: ["TPS Limbah B3", "IPAL / WWTP", "Environmental Documents", "Sampling Coordination"],
-    tags: ["WWTP", "TPS LB3", "FACILITY", "COMPLIANCE"],
-    visual: "facility",
+    id: "environmental-facility-engineering", slug: "environmental-facility-engineering", index: "PROYEK / 004", title: "Rekayasa Fasilitas Lingkungan", category: "FASILITAS LINGKUNGAN", year: "2025", role: "HSE Lingkungan", organization: "PT Pelayaran Duta Lintas Samudera", location: "Samarinda, Kalimantan Timur", visual: "facility",
+    shortDescription: "Dukungan perencanaan TPS Limbah B3 dan instalasi pengolahan air limbah yang disertai dokumentasi lingkungan.",
+    problem: "Perusahaan membutuhkan fasilitas dan dokumen lingkungan yang sesuai untuk mendukung operasi.",
+    approach: ["Berpartisipasi dalam perencanaan fasilitas serta pembaruan dokumen lingkungan.", "Mendukung perencanaan TPS Limbah B3 dan IPAL.", "Mengoordinasikan alur sampling berkala dan analisis laboratorium untuk parameter lingkungan."],
+    result: "CV menegaskan lingkup perencanaan dan dokumentasi; tidak ada hasil konstruksi maupun angka hasil yang dipublikasikan.",
+    takeaway: "Menunjukkan pengalaman rekayasa fasilitas lingkungan dan dokumentasi yang terapan dalam konteks kepatuhan operasional.",
+    tools: ["TPS Limbah B3", "IPAL", "Dokumen Lingkungan", "Koordinasi Sampling"], tags: ["IPAL", "TPS LB3", "FASILITAS", "KEPATUHAN"],
   },
 ];
 
 export const skillGroups = [
-  { label: "AIR", skills: ["AERMOD", "ALOHA"] },
-  { label: "GIS / MAPPING", skills: ["ArcGIS", "QGIS", "Surpac"] },
-  { label: "ENGINEERING", skills: ["AutoCAD", "SketchUp 3D", "EPANET"] },
-  { label: "SYSTEMS / DATA", skills: ["EVEREST", "SIMPEL", "EMF", "Python", "SQL"] },
-  { label: "FIELD", skills: ["Water / Air / Waste Sampling", "Drone", "Total Station", "Theodolite", "pH & Turbidity Meter"] },
+  { label: "UDARA", skills: ["AERMOD", "ALOHA"] },
+  { label: "GIS / PEMETAAN", skills: ["ArcGIS", "QGIS", "Surpac"] },
+  { label: "REKAYASA", skills: ["AutoCAD", "SketchUp 3D", "EPANET"] },
+  { label: "SISTEM / DATA", skills: ["EVEREST", "SIMPEL", "EMF", "Python", "SQL"] },
+  { label: "LAPANGAN", skills: ["Sampling Air / Udara / Limbah", "Drone", "Total Station", "Theodolite", "pH & Turbidity Meter"] },
 ] as const;
 
 export const certifications = [
-  ["CERT / 001", "QHSE Management System", "ISO 9001 · 14001 · 45001 · 31000 · LOTO · HSE Plan", "2024"],
-  ["CERT / 002", "Ahli K3 Muda Konstruksi & Construction Management", "Environmental and construction safety training", "2025"],
-  ["CERT / 003", "Diklat Ahli K3 Muda Pertambangan", "Mining occupational-safety training", "2024"],
-  ["CERT / 004", "Managing HSE Aspects in Drilling Operation", "Onshore and offshore drilling context", "2024"],
-  ["CERT / 005", "K3 Industri Pengelolaan Air Limbah", "Industrial wastewater-management safety", "2023"],
-  ["CERT / 006", "Environmental & Technical Upskilling", "Persetujuan Lingkungan · ArcGIS · SketchUp 3D", "2023—2025"],
+  ["SERT / 001", "QHSE Management System", "ISO 9001 · 14001 · 45001 · 31000 · LOTO · HSE Plan", "2024"],
+  ["SERT / 002", "Ahli Muda K3 Konstruksi & Manajemen Konstruksi", "Pelatihan keselamatan lingkungan dan konstruksi", "2025"],
+  ["SERT / 003", "Diklat Ahli K3 Muda Pertambangan", "Pelatihan keselamatan kerja pertambangan", "2024"],
+  ["SERT / 004", "Managing HSE Aspects in Drilling Operation", "Konteks pengeboran onshore dan offshore", "2024"],
+  ["SERT / 005", "K3 Industri Pengelolaan Air Limbah", "Keselamatan pengelolaan air limbah industri", "2023"],
+  ["SERT / 006", "Upskilling Lingkungan & Teknis", "Persetujuan Lingkungan · ArcGIS · SketchUp 3D", "2023—2025"],
 ] as const;
 
-export const achievements = [
-  ["3.90", "GPA / CUM LAUDE"],
-  ["100", "JUNIOR-HIGH MATH NATIONAL EXAM"],
-  ["9.78", "ELEMENTARY NATIONAL-EXAM AVERAGE"],
-  ["30", "HIMATELI KPSDM MEMBERS LED"],
-] as const;
-
-export const recognition = [
-  "Bakti BCA Scholarship recipient",
-  "Kaltim Tuntas Scholarship recipient, 2022/2023",
-  "1st Place, BCA Community Service Project",
-  "3rd Place, East Kalimantan Regional Biology Olympiad, 2019",
-  "Finalist, Astramatika XXII, 2014",
-] as const;
-
+export const achievements = [["3,90", "IPK / CUM LAUDE"], ["100", "NILAI UN MATEMATIKA SMP"], ["9,78", "RATA-RATA UN SEKOLAH DASAR"], ["30", "ANGGOTA KPSDM HIMATELI DIPIMPIN"]] as const;
+export const recognition = ["Penerima Beasiswa Bakti BCA", "Penerima Beasiswa Kaltim Tuntas, 2022/2023", "Juara 1 Project Pengabdian Masyarakat BCA", "Juara 3 Olimpiade Biologi Regional Kalimantan Timur, 2019", "Finalis Astramatika XXII, 2014"] as const;
 export const leadership = [
-  {
-    role: "Organizational Supervisory Board",
-    organization: "HIMATELI UNMUL",
-    period: "2024",
-    text: "Oversaw organizational operations, strategic direction, and adherence to internal rules.",
-  },
-  {
-    role: "Head of KPSDM Department",
-    organization: "HIMATELI UNMUL",
-    period: "2022/2023",
-    text: "Led 30 department members and organized technical training, industry seminars, environmental campaigns, and member-development programs.",
-  },
-  {
-    role: "Internal Affairs Department Officer",
-    organization: "IMTLI Regional V",
-    period: "2021—2022",
-    text: "Managed regional administrative coordination and helped deliver online technical training across Kalimantan.",
-  },
+  { role: "Dewan Pengawas Organisasi", organization: "HIMATELI UNMUL", period: "2024", text: "Mengawasi operasi organisasi, arah strategis, dan kepatuhan terhadap aturan internal." },
+  { role: "Ketua Departemen KPSDM", organization: "HIMATELI UNMUL", period: "2022/2023", text: "Memimpin 30 anggota dan menyelenggarakan pelatihan teknis, seminar industri, kampanye lingkungan, serta program pengembangan anggota." },
+  { role: "Pengurus Departemen Dalam Negeri", organization: "IMTLI Regional V", period: "2021—2022", text: "Mengelola koordinasi administrasi regional dan mendukung pelatihan teknis daring lintas Kalimantan." },
 ] as const;
-
 export const technicalEcosystem = [
-  ["AIR", ["AERMOD", "ALOHA", "Sampling"]],
-  ["WATER", ["Wastewater", "WWTP", "CoA Validation", "SIMPEL"]],
-  ["GIS", ["ArcGIS", "QGIS", "Surpac"]],
-  ["DATA", ["Python", "SQL", "EVEREST", "EMF"]],
-  ["COMPLIANCE", ["Pertek", "RKL-RPL", "PROPER", "ISO 14001"]],
+  ["UDARA", ["AERMOD", "ALOHA", "Sampling"]], ["AIR", ["Air Limbah", "IPAL", "Validasi CoA", "SIMPEL"]], ["GIS", ["ArcGIS", "QGIS", "Surpac"]], ["DATA", ["Python", "SQL", "EVEREST", "EMF"]], ["KEPATUHAN", ["Pertek", "RKL-RPL", "PROPER", "ISO 14001"]],
 ] as const;

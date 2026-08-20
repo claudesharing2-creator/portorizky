@@ -1,0 +1,20 @@
+/**
+ * ENVIRONMENTAL BRUTALISM REVISION: all visual accents reference soil, foliage, water systems,
+ * or field instrumentation; the palette remains matte, high-contrast, and mechanically indexed.
+ */
+.site-shell { background-color: var(--paper); }
+.kicker, .section-rail span, .experience-index, .project-index, .case-facts span, .case-coordinate-rail > span { color: var(--moss); }
+.target { border-color: var(--moss); }.target::after, .target::before { background: var(--moss); }
+.hero-copy h1 span:nth-child(2), .topbar-cv, .hard-button-primary, .note-record > span, .case-result > span { background-color: var(--signal); }
+.hero-copy h1 span:nth-child(2) { background: transparent; color: var(--signal); }
+.hero-meta span:nth-child(2), .experience-period i, .case-hero-data, .project-link:hover, .contact-details a, .footer-record a { color: var(--moss); }
+.project-signal span, .project-air::after { background-color: var(--ochre); }.project-air::after { box-shadow: 0 0 0 20px var(--ochre), 0 0 0 40px var(--ink); }
+.hero-map circle { fill: var(--ochre); }.hero-visual > p, .work-visual p, .education-note { border-left-color: var(--moss); }
+.hero-visual > img, .work-visual img, .contact-visual img { filter: grayscale(.35) sepia(.65) hue-rotate(22deg) saturate(.72) contrast(1.12); mix-blend-mode: multiply; }
+.hero-map svg { stroke: var(--moss); }.hero-map .node { border-color: var(--moss); }.node-air, .node-data, .node-water { color: var(--ink); }
+.brand-block img { filter: sepia(.72) hue-rotate(340deg) saturate(.78) contrast(.95); }
+.hero-visual .node-data { border-color: var(--ochre); }.hero-visual .node-air { border-color: var(--moss); }.hero-visual .node-water { border-color: var(--signal); }
+.experience-item[open] summary, .note-record, .case-result, .footer-record { background: var(--ink); }
+.ecosystem-controls button:hover, .ecosystem-controls button.is-active, .certificate:hover { background: var(--moss); }
+.case-stamp { border-color: var(--signal); color: var(--signal); }.case-air::before { box-shadow: 0 0 0 35px var(--ochre), 0 0 0 70px var(--moss); }
+.case-coordinate-rail > span, .case-coordinate-rail i { color: var(--moss); }

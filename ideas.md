@@ -71,3 +71,11 @@ The mark is a bold red registration target interrupted by a black diagonal outpu
 - Macro typography can be oversized and poster-like, but the candidate’s full name and the meaning of primary section labels remain legible at first glance.
 - The red registration mark is the masthead’s primary identity device; its accompanying identifier reads as small dossier metadata rather than a conventional wordmark.
 - Red geometry must indicate navigation, status, coordinates, verification, or an active action. It is never ambient decoration.
+
+## Keputusan Revisi — Environmental Brutalism
+
+Sistem visual direvisi menjadi **Environmental Brutalism** dengan bahasa Indonesia sebagai bahasa antarmuka. Struktur Swiss Industrial Print, grid yang tegas, sudut siku, data monospasi, dan skala tipografi ekstrem tetap dipertahankan; namun tampilannya sekarang terasa seperti buku catatan lapangan lingkungan dan dokumentasi operasional.
+
+Palet bumi menggunakan **Kertas Aluvial `#EAE4D6`** sebagai substrat, **Arang Hutan `#182018`** sebagai tinta utama, **Hijau Lumut `#52623E`** sebagai penanda sistem dan navigasi aktif, **Tanah Liat `#A95B37`** sebagai aksen tindakan dan peringatan, serta **Oker Pengukuran `#B88A2B`** hanya untuk indikator teknis yang terbatas. Warna ini digunakan secara fungsional, bukan dekoratif.
+
+Motif visual mengambil bentuk kontur tanah, jalur air, titik pengambilan sampel, kisi peta, dan jejak peralatan lapangan. Citra tetap diproses sebagai arsip cetak kasar dengan rona tanah, sehingga tidak menampilkan hijau korporat yang generik. Seluruh headline, label, tombol, dan pesan status harus singkat, teknis, serta terdengar seperti catatan lapangan yang terindeks.

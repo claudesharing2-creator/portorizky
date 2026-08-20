@@ -20,7 +20,7 @@
   --color-border: var(--ink);
 }
 
-:root { --paper: #f4f4f0; --ink: #101010; --signal: #e61919; --muted-ink: #5e5e59; --hairline: rgba(16,16,16,.88); --radius: 0px; }
+:root { --paper: #eae4d6; --ink: #182018; --signal: #a95b37; --moss: #52623e; --ochre: #b88a2b; --muted-ink: #5f6457; --hairline: rgba(24,32,24,.88); --radius: 0px; }
 * { box-sizing: border-box; border-radius: 0 !important; }
 html { scroll-behavior: smooth; background: var(--paper); }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: "IBM Plex Sans", Arial, sans-serif; overflow-x: hidden; }
